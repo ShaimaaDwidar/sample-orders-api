@@ -1,5 +1,9 @@
 pipeline {
   agent any
+  
+  tools {
+    nodejs 'node'
+  }
 
   environment {
     APIC_SERVER = 'https://apic.example.com'

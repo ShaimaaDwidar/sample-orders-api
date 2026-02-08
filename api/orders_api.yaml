@@ -16,7 +16,7 @@ servers:
 - url: /order
 security:
 - clientID: []
-paths
+paths:
   /{orderNumber}:
     get:
       summary: Retrieve the details of your order.

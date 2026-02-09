@@ -15,7 +15,7 @@ pipeline {
 
     stage('Validate OpenAPI') {
       steps {
-        sh 'npx swagger-cli validate api/orders_api.yaml'
+        sh 'apic drafts:validate api/orders_api.yaml'
       }
     }
   }
